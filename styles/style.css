@@ -74,6 +74,7 @@ ol {
   overflow-y: scroll;
   block-size: 298px;
   scrollbar-width: none;
+  position: relative;
 }
 .content__details {
   width: 100%;
@@ -83,6 +84,7 @@ ol {
 .result__video-container {
   inline-size: 711px;
   margin-bottom: 16px;
+  position: relative;
 }
 
 .result__video {
