@@ -64,7 +64,7 @@ ol {
   overflow-y: scroll;
   block-size: 298px;
   position: relative;
-  scrollbar-width: thin;
+  scrollbar-width: auto;
 }
 .content__details {
   width: 100%;
@@ -162,8 +162,8 @@ ol {
   appearance: none;
 }
 .search-form__label:hover .search-form__label-text {
-  text-decoration: underline 1px #fff;
-  text-underline-offset: 5px;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
