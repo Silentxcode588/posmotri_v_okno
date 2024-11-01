@@ -73,12 +73,13 @@ ol {
 }
 .result__video-container {
   inline-size: 711px;
-  margin-bottom: 16px;
+  /* margin: 0 0 4px; */
   position: relative;
 }
 
 .result__video {
   object-fit: cover;
+  object-position: center;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -129,8 +130,10 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   max-width: 200px;
+  text-transform: uppercase;
 }
 .content__video-card-description {
+  padding: 0 2px;
   font-family: Fira Sans Condensed,sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -189,8 +192,26 @@ ol {
   padding: 6px 0;
   color: #fff;
 }
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline 1px #FFF;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
 .search-form__submit-button {
-  margin-top: auto;
+  /* margin-top: auto; */
+  align-self: flex-end;
 }
 .more-button {
   margin-top: auto;
@@ -202,7 +223,7 @@ ol {
   border-left: none;
   padding: 2px 0;
   color: currentColor;
-  font-family: inherit,sans-serif;
+  font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
   background-color: transparent;
@@ -253,3 +274,5 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
+
+
