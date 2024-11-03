@@ -26,6 +26,9 @@ ul,
 ol {
   list-style: none;
 }
+video {
+  width: 100%;
+}
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -64,7 +67,6 @@ ol {
   overflow-y: scroll;
   block-size: 298px;
   position: relative;
-  scrollbar-width: auto;
 }
 .content__details {
   width: 100%;
@@ -73,8 +75,9 @@ ol {
 }
 .result__video-container {
   inline-size: 711px;
-  /* margin: 0 0 4px; */
+  block-size: 386px;
   position: relative;
+  margin-bottom: 16px;
 }
 
 .result__video {
@@ -104,8 +107,7 @@ ol {
   text-align: left;
 }
 .title {
-  padding-right: 139px;
-  padding-bottom: 26px;
+  margin-bottom: 26px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -131,10 +133,11 @@ ol {
   overflow: hidden;
   max-width: 200px;
   text-transform: uppercase;
+  padding: 2px 2px 5px;
 }
 .content__video-card-description {
   padding: 0 2px;
-  font-family: Fira Sans Condensed,sans-serif;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -197,7 +200,7 @@ ol {
 }
 
 .button:hover {
-  text-decoration: underline 1px #FFF;
+  text-decoration: underline 1px #fff;
 }
 
 .button:focus {
@@ -205,15 +208,16 @@ ol {
 }
 
 .button:focus-visible {
-  outline: 1px solid #FFF;
+  outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
 .search-form__submit-button {
-  /* margin-top: auto; */
   align-self: flex-end;
 }
 .more-button {
+  width: calc(100% - 4px);
+  margin: 2px;
   margin-top: auto;
 }
 .search-form__textfield {
@@ -274,5 +278,3 @@ ol {
 .content__card-link_current {
   background-color: #545050;
 }
-
-
